@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #8b0000, #ff0000);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#congrats-popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: green;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 40px;
+  border: 2px solid green;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: 999;
+  text-align: center;
+}
+
+#slot-machine {
+  width: max-content;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  border: 6px solid gold;
+  box-shadow: 0 0 20px gold;
+}
+
+.reels {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.reel-container {
+  width: 200px;
+  height: 360px;
+  background: linear-gradient(darkgray, white, white, white, darkgray);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000 inset;
+  position: relative;
+  overflow: hidden;
+}
+
+.reel {
+  position: absolute;
+  top: -3805px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 88px;
+}
+
+.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#spin-button {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+#spin-button:focus {
+  outline: none;
+}
+
+.spin {
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p.footer {
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+
+p.footer a{
+    color: #fff;
+}

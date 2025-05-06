@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simple Slot Machine</title>
+</head>
+<body>
+  <main id="slot-machine">
+    <section class="reels">
+      <div class="reel-container"><div class="reel"></div></div>
+      <div class="reel-container"><div class="reel"></div></div>
+      <div class="reel-container"><div class="reel"></div></div>
+    </section>
+
+    <section class="controls">
+      <button id="spin-button">
+        <img id="spin-icon" src="img/spin-gray.png" alt="Spin">
+      </button>
+    </section>
+  </main>
+  
+	<div id="congrats-popup" style="display: none;">
+	🎉 Congratulations! You got 3 matching symbols! 🎉
+	</div>
+
+	<audio id="congrats-sound" src="audio/congrats.mp3" preload="auto"></audio>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <p class="footer">Created by <a href="https://adrianjandongan.me" target="_blank">AJEE IT SOLUTION</a> [AJ.Mole] 2025</p>
+</body>
+</html>
